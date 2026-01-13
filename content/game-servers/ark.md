@@ -1,6 +1,6 @@
 ---
 title: ARK Server Setup
-description: Complete guide to running an ARK: Survival Evolved server.
+description: "Complete guide to running an ARK: Survival Evolved server."
 icon: egg
 order: 4
 tags: [ark, survival, dinosaurs]

@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "qualitynode-docs",
+    "public": "build/jaspr",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
