@@ -52,6 +52,6 @@ Your server is ready! Find your connection details in the dashboard:
 
 ## Next Steps
 
-- [Understanding Your Dashboard](/knowledgebase/getting-started/dashboard-overview)
-- [Installing Mods and Plugins](/knowledgebase/server-management/mods-plugins)
-- [Configuring Backups](/knowledgebase/server-management/backups)
+- [Understanding Your Dashboard](/getting-started/dashboard-overview)
+- [Installing Mods and Plugins](/server-management/mods-plugins)
+- [Configuring Backups](/server-management/backups)

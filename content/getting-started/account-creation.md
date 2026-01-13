@@ -32,4 +32,4 @@ Your account security is important:
 
 ## Next Steps
 
-Once your account is created, you're ready to [choose a hosting plan](/knowledgebase/getting-started/choosing-a-plan).
+Once your account is created, you're ready to [choose a hosting plan](/getting-started/choosing-a-plan).

@@ -11,10 +11,10 @@ Find detailed setup guides and configuration tips for each supported game.
 
 ## Popular Games
 
-- [Minecraft](/knowledgebase/game-servers/minecraft) - Java and Bedrock editions
-- [Rust](/knowledgebase/game-servers/rust) - Survival multiplayer
-- [ARK: Survival Evolved](/knowledgebase/game-servers/ark) - Dinosaur survival
-- [Valheim](/knowledgebase/game-servers/valheim) - Viking exploration
+- [Minecraft](/game-servers/minecraft) - Java and Bedrock editions
+- [Rust](/game-servers/rust) - Survival multiplayer
+- [ARK: Survival Evolved](/game-servers/ark) - Dinosaur survival
+- [Valheim](/game-servers/valheim) - Viking exploration
 
 ## All Supported Games
 

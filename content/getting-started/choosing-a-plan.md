@@ -45,4 +45,4 @@ Save up to 17% when you choose annual billing. Annual plans include:
 
 ## Next Steps
 
-Ready to get started? [Create your first server](/knowledgebase/getting-started/first-server).
+Ready to get started? [Create your first server](/getting-started/first-server).

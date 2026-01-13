@@ -11,11 +11,11 @@ Manage your QualityNode subscription, payments, and billing information.
 
 ## Topics
 
-- [Payment Methods](/knowledgebase/billing/payment-methods)
-- [Managing Subscriptions](/knowledgebase/billing/subscriptions)
-- [Invoices](/knowledgebase/billing/invoices)
-- [Upgrades and Downgrades](/knowledgebase/billing/plan-changes)
-- [Refunds](/knowledgebase/billing/refunds)
+- [Payment Methods](/billing/payment-methods)
+- [Managing Subscriptions](/billing/subscriptions)
+- [Invoices](/billing/invoices)
+- [Upgrades and Downgrades](/billing/plan-changes)
+- [Refunds](/billing/refunds)
 
 ## Quick Links
 

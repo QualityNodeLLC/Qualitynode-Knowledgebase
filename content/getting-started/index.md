@@ -19,7 +19,7 @@ Welcome to QualityNode! This guide will walk you through setting up your first g
 
 ## What's Next?
 
-- [Creating Your Account](/knowledgebase/getting-started/account-creation)
-- [Choosing the Right Plan](/knowledgebase/getting-started/choosing-a-plan)
-- [Your First Server](/knowledgebase/getting-started/first-server)
-- [Understanding the Dashboard](/knowledgebase/getting-started/dashboard-overview)
+- [Creating Your Account](/getting-started/account-creation)
+- [Choosing the Right Plan](/getting-started/choosing-a-plan)
+- [Your First Server](/getting-started/first-server)
+- [Understanding the Dashboard](/getting-started/dashboard-overview)
