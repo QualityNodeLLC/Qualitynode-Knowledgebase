@@ -8,6 +8,7 @@ environment:
 
 dependencies:
   web: ^1.1.1
+  yaml: ^3.1.3
   arcane_jaspr:
     git:
       url: https://github.com/ArcaneArts/arcane_jaspr
@@ -30,6 +31,19 @@ jaspr:
   mode: static
 
 scripts:
+  # Content validation
+  validate: dart run tool/validate_content.dart
+  validate_fix: dart run tool/validate_content.dart --fix --verbose
+
+  # Development
   serve: jaspr serve
-  build: jaspr build
+
+  # Build (validates content first, then builds)
+  build: dart run tool/validate_content.dart --fix && jaspr build
+  build_strict: dart run tool/validate_content.dart --strict && jaspr build
+
+  # Deployment
+  deploy: dart run tool/validate_content.dart --fix && jaspr build && firebase deploy --only hosting --project qualitynode-1b4a8
+
+  # Cleanup
   clean: jaspr clean

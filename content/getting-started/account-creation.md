@@ -3,6 +3,7 @@ title: Creating Your Account
 description: Step-by-step guide to creating your QualityNode account.
 icon: user-plus
 order: 2
+author: Brian Neumann-Fopiano
 ---
 
 # Creating Your Account

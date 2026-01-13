@@ -3,6 +3,7 @@ title: Managing Subscriptions
 description: View, modify, and cancel your server subscriptions.
 icon: repeat
 order: 3
+author: Brian Neumann-Fopiano
 ---
 
 # Managing Subscriptions

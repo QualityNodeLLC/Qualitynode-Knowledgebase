@@ -3,6 +3,7 @@ title: Choosing the Right Plan
 description: Compare QualityNode hosting plans to find the best fit for your needs.
 icon: layers
 order: 3
+author: Brian Neumann-Fopiano
 ---
 
 # Choosing the Right Plan

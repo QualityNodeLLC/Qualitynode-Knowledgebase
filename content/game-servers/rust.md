@@ -4,6 +4,7 @@ description: Guide to setting up and configuring your Rust dedicated server.
 icon: shield
 order: 3
 tags: [rust, survival, popular]
+author: Brian Neumann-Fopiano
 ---
 
 # Rust Server Setup

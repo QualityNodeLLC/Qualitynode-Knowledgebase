@@ -3,6 +3,7 @@ title: Payment Methods
 description: Accepted payment methods and how to manage them.
 icon: wallet
 order: 2
+author: Brian Neumann-Fopiano
 ---
 
 # Payment Methods

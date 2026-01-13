@@ -4,6 +4,7 @@ description: Complete guide to setting up and configuring your Minecraft server.
 icon: box
 order: 2
 tags: [minecraft, java, bedrock, popular]
+author: Brian Neumann-Fopiano
 ---
 
 # Minecraft Server Setup

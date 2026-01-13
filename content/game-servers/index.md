@@ -3,6 +3,7 @@ title: Game Servers
 description: Game-specific guides for setting up and configuring your servers.
 icon: gamepad-2
 order: 1
+author: Brian Neumann-Fopiano
 ---
 
 # Game Server Guides

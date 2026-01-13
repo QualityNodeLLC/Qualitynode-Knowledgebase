@@ -3,6 +3,7 @@ title: Refunds
 description: Our refund policy and how to request a refund.
 icon: rotate-ccw
 order: 6
+author: Brian Neumann-Fopiano
 ---
 
 # Refunds

@@ -3,6 +3,7 @@ title: Upgrades and Downgrades
 description: How to change your server plan to match your needs.
 icon: arrow-up-down
 order: 5
+author: Brian Neumann-Fopiano
 ---
 
 # Upgrades and Downgrades

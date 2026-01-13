@@ -3,6 +3,7 @@ title: Billing
 description: Manage payments, subscriptions, and invoices.
 icon: credit-card
 order: 1
+author: Brian Neumann-Fopiano
 ---
 
 # Billing

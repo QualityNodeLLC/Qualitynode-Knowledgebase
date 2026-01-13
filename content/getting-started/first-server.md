@@ -3,6 +3,7 @@ title: Creating Your First Server
 description: Step-by-step guide to deploying your first game server on QualityNode.
 icon: server
 order: 4
+author: Brian Neumann-Fopiano
 ---
 
 # Creating Your First Server

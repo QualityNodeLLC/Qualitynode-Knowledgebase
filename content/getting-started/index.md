@@ -3,6 +3,7 @@ title: Getting Started
 description: Learn how to set up and configure your first QualityNode game server.
 icon: rocket
 order: 1
+author: Brian Neumann-Fopiano
 ---
 
 # Getting Started with QualityNode

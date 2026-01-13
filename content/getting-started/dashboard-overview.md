@@ -3,6 +3,7 @@ title: Dashboard Overview
 description: Learn how to navigate and use the QualityNode control panel.
 icon: layout-dashboard
 order: 5
+author: Brian Neumann-Fopiano
 ---
 
 # Dashboard Overview

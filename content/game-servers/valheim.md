@@ -4,6 +4,7 @@ description: Set up your own Valheim dedicated server for Viking adventures.
 icon: axe
 order: 5
 tags: [valheim, survival, viking]
+author: Brian Neumann-Fopiano
 ---
 
 # Valheim Server Setup

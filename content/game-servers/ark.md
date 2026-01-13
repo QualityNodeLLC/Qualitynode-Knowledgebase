@@ -4,6 +4,7 @@ description: "Complete guide to running an ARK: Survival Evolved server."
 icon: egg
 order: 4
 tags: [ark, survival, dinosaurs]
+author: Brian Neumann-Fopiano
 ---
 
 # ARK: Survival Evolved Server Setup
