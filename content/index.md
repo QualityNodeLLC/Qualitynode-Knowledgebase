@@ -1,12 +1,12 @@
 ---
-title: QualityNode Knowledge Base
+title: QualityNode Knowledgebase
 description: Find answers to common questions about game server hosting, server management, and more.
 icon: book-open
 order: 0
 author: Brian Neumann-Fopiano
----
+--- 
 
-# Welcome to the QualityNode Knowledge Base
+# Welcome to the QualityNode Knowledgebase
 
 Find comprehensive guides and documentation to help you get the most out of your QualityNode game server hosting experience.
 

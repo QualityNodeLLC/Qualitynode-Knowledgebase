@@ -10,7 +10,7 @@ void main() async {
   Jaspr.initializeApp(options: defaultServerOptions);
 
   runApp(
-    await KnowledgeBaseApp.create( 
+    await KnowledgeBaseApp.create(
       config: const SiteConfig(
         name: 'QualityNode KnowledgeBase',
         description: 'Game server hosting documentation and guides',
