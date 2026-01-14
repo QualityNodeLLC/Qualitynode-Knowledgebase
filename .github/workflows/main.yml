@@ -82,6 +82,9 @@ jobs:
       - name: Get dependencies
         run: flutter pub get
 
+      - name: Generate search index
+        run: dart run tool/generate_search_index.dart
+
       - name: Build Jaspr app
         run: jaspr build
 
