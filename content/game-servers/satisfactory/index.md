@@ -1,7 +1,6 @@
 ---
 title: Satisfactory Server Hosting
 description: Complete guides for setting up and managing your Satisfactory dedicated server on QualityNode.
-icon: factory
 order: 1
 author: Brian Neumann-Fopiano
 ---
@@ -19,7 +18,7 @@ QualityNode provides dedicated Satisfactory server hosting for your factory-buil
 
 - [Server Settings](/game-servers/satisfactory/settings) - Configure server options and game settings
 - [Save Management](/game-servers/satisfactory/saves) - Manage and upload save files
-
+ 
 ## Administration
 
 - [Admin Commands](/game-servers/satisfactory/commands) - Server administration

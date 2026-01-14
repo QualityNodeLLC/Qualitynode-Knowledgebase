@@ -1,7 +1,6 @@
 ---
 title: Valheim Server Hosting
 description: Complete guides for setting up, configuring, and managing your Valheim dedicated server on QualityNode.
-icon: axe
 order: 1
 author: Brian Neumann-Fopiano
 ---

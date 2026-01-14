@@ -1,7 +1,6 @@
 ---
 title: Minecraft Server Hosting
 description: Complete guides for setting up, configuring, and optimizing your Minecraft server on QualityNode.
-icon: pickaxe
 order: 1
 author: Brian Neumann-Fopiano
 ---

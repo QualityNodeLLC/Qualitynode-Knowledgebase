@@ -1,7 +1,6 @@
 ---
 title: Game Servers
 description: Game-specific guides for setting up and configuring your servers.
-icon: gamepad-2
 order: 1
 author: Brian Neumann-Fopiano
 ---
@@ -16,7 +15,7 @@ These games have comprehensive documentation with setup guides, configuration op
 
 ### Minecraft
 
-Java and Bedrock editions with full modding and plugin support.
+Java and Bedrock editions with full modding and plugin support. 
 
 - [Getting Started](/game-servers/minecraft/getting-started) - Initial setup
 - [Choosing Server Software](/game-servers/minecraft/server-software) - Paper, Fabric, Forge
