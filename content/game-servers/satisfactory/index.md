@@ -14,7 +14,7 @@ QualityNode provides dedicated Satisfactory server hosting for your factory-buil
 - [Getting Started with Your Server](/game-servers/satisfactory/getting-started) - Initial setup and configuration
 - [Connecting to Your Server](/game-servers/satisfactory/connecting) - How players join your server
 
-## Server Configuration
+## Server Configuration 
 
 - [Server Settings](/game-servers/satisfactory/settings) - Configure server options and game settings
 - [Save Management](/game-servers/satisfactory/saves) - Manage and upload save files

@@ -23,11 +23,11 @@ This guide covers the essential steps for setting up your QualityNode Satisfacto
 
 The first player to connect becomes the server administrator. Set up your server:
 
-1. Launch Satisfactory and go to **Server Manager**
+1. Launch Satisfactory and go to **Server Manager** 
 2. Add your server using the IP and port
 3. Claim the server when prompted
 4. Set an admin password
-
+ 
 <!-- TODO: Add configuration screenshots -->
 
 ## Server Settings

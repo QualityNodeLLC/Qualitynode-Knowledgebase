@@ -10,13 +10,17 @@ dependencies:
   web: ^1.1.1
   yaml: ^3.1.3
   arcane_jaspr:
-    git:
-      url: https://github.com/ArcaneArts/arcane_jaspr
-      ref: master
+    path: /Users/brianfopiano/Developer/RemoteGit/ArcaneArts/arcane_jaspr
+  # arcane_jaspr:
+  #   git:
+  #     url: https://github.com/ArcaneArts/arcane_jaspr
+  #     ref: master
   arcane_inkwell:
-    git:
-      url: https://github.com/ArcaneArts/arcane_inkwell
-      ref: master
+    path: /Users/brianfopiano/Developer/RemoteGit/ArcaneArts/arcane_inkwell
+  # arcane_inkwell:
+  #   git:
+  #     url: https://github.com/ArcaneArts/arcane_inkwell
+  #     ref: master
 
   jaspr: ^0.22.1
   jaspr_content: ^0.4.5
