@@ -230,3 +230,7 @@ pnpm-lock.yaml
 .run/
 
 web/search-index.json
+
+lib/main.client.options.dart
+
+lib/main.server.options.dart
