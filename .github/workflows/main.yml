@@ -29,6 +29,13 @@ jobs:
         with:
           sdk: stable
 
+      - name: Get dependencies (scripts)
+        working-directory: scripts
+        run: dart pub get
+
+      - name: Switch to remote dependencies
+        run: dart scripts/switch_dependencies.dart remote
+
       - name: Get dependencies
         run: dart pub get
 
@@ -78,6 +85,13 @@ jobs:
 
       - name: Add pub cache to PATH
         run: echo "$HOME/.pub-cache/bin" >> $GITHUB_PATH
+
+      - name: Get dependencies (scripts)
+        working-directory: scripts
+        run: dart pub get
+
+      - name: Switch to remote dependencies
+        run: dart scripts/switch_dependencies.dart remote
 
       - name: Get dependencies
         run: flutter pub get
