@@ -228,3 +228,5 @@ package-lock.json
 yarn.lock
 pnpm-lock.yaml
 .run/
+
+web/search-index.json
