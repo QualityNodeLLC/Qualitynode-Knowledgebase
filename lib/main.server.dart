@@ -26,7 +26,7 @@ void main() async {
               external: true),
           NavLink(
               label: 'Discord',
-              href: 'https://discord.gg/Z2ePfBnt',
+              href: 'https://discord.qualitynode.com',
               external: true),
         ],
         footerText: 'Built with Arcane Inkwell',

@@ -24,5 +24,5 @@ Find comprehensive guides and documentation to help you get the most out of your
 Can't find what you're looking for? Our support team is here to help:
 
 - **Email**: support@qualitynode.net
-- **Discord**: [Join our community](https://discord.gg/Z2ePfBnt)
+- **Discord**: [Join our community](https://discord.qualitynode.com)
 - **Response Time**: We typically respond within a few hours
