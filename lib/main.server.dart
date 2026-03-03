@@ -18,11 +18,11 @@ void main() async {
         githubUrl: 'https://github.com/QualityNodeLLC/Qualitynode-Knowledgebase',
         showEditLink: true,
         editBranch: 'main',
+        defaultTheme: KBThemeMode.system,
         headerLinks: [
-          NavLink(label: 'Docs', href: '/'),
           NavLink(
               label: 'Website',
-              href: 'https://qualitynode.net',
+              href: 'https://qualitynode.com',
               external: true),
           NavLink(
               label: 'Discord',
@@ -31,10 +31,9 @@ void main() async {
         ],
         footerText: 'Built with Arcane Inkwell',
         sidebarFooter: 'QualityNode',
-        sidebarFooterUrl: 'https://qualitynode.net',
+        sidebarFooterUrl: 'https://qualitynode.com',
       ),
-      stylesheet: const CodexStylesheet(theme: CodexTheme.green)
-      // stylesheet: const ShadcnStylesheet(theme: ShadcnTheme.midnight),
+      stylesheet: const ShadcnStylesheet(theme: ShadcnTheme.charcoal),
     ),
   );
 }

@@ -12,7 +12,7 @@ Welcome to QualityNode! This guide will walk you through setting up your first g
 
 ## Quick Start
 
-1. **Create an Account** - Sign up at [qualitynode.net](https://qualitynode.net)
+1. **Create an Account** - Sign up at [qualitynode.net](https://qualitynode.com)
 2. **Choose a Plan** - Select the plan that fits your needs
 3. **Select Your Game** - Pick from our supported games catalog
 4. **Configure Your Server** - Customize settings and install mods

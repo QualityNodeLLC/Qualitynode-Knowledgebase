@@ -12,7 +12,7 @@ Setting up your QualityNode account is quick and easy.
 
 ## Registration Steps
 
-1. Visit [qualitynode.net](https://qualitynode.net)
+1. Visit [qualitynode.net](https://qualitynode.com)
 2. Click **Sign Up** in the navigation
 3. Enter your email address
 4. Create a secure password
