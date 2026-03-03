@@ -12,11 +12,9 @@ dependencies:
   arcane_jaspr:
     git:
       url: https://github.com/ArcaneArts/arcane_jaspr.git
-      ref: master
   arcane_inkwell:
     git:
       url: https://github.com/ArcaneArts/arcane_inkwell.git
-      ref: master
 
   jaspr: ^0.22.3
   jaspr_content: ^0.5.0
