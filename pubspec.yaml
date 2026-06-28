@@ -10,11 +10,11 @@ dependencies:
   web: ^1.1.1
   yaml: ^3.1.3
   arcane_jaspr:
-    path: /Users/brianfopiano/Developer/RemoteGit/ArcaneArts/arcane_jaspr
+    path: .deps/arcane_jaspr
   arcane_jaspr_neon:
-    path: /Users/brianfopiano/Developer/RemoteGit/ArcaneArts/arcane_jaspr/packages/arcane_jaspr_neon
+    path: .deps/arcane_jaspr/packages/arcane_jaspr_neon
   arcane_lexicon:
-    path: /Users/brianfopiano/Developer/RemoteGit/ArcaneArts/arcane_lexicon
+    path: .deps/arcane_lexicon
 
   jaspr: ^0.23.1
   jaspr_content: ^0.5.2
@@ -27,9 +27,9 @@ dev_dependencies:
 
 dependency_overrides:
   arcane_jaspr:
-    path: /Users/brianfopiano/Developer/RemoteGit/ArcaneArts/arcane_jaspr
+    path: .deps/arcane_jaspr
   arcane_lexicon:
-    path: /Users/brianfopiano/Developer/RemoteGit/ArcaneArts/arcane_lexicon
+    path: .deps/arcane_lexicon
 
 jaspr:
   mode: static
