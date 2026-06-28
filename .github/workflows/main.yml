@@ -130,13 +130,24 @@ jobs:
       - name: Build Jaspr app
         run: jaspr build
 
-      - name: Deploy to Firebase Hosting
-        uses: FirebaseExtended/action-hosting-deploy@v0
+      - name: Setup Node
+        uses: actions/setup-node@v6
         with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-          channelId: live
-          projectId: qualitynode-1b4a8
-          # Pin below firebase-tools 15.22.3, which double-releases to the live
-          # channel and exits 1 with a 400 "current active version" (firebase-tools#10730).
-          firebaseToolsVersion: 15.22.1
+          # Node 22.23.0 has a keep-alive socket regression that breaks
+          # firebase-tools' OAuth token fetch ("Premature close", surfaced as a
+          # bogus "Failed to authenticate"). 22.23.1 is the patched release. This
+          # deploy job previously had no Node setup, so it used the runner's
+          # broken default; a bare "22" would still resolve to the cached 22.23.0.
+          node-version: 22.23.1
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v3
+        with:
+          credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+
+      - name: Deploy to Firebase Hosting
+        # firebase.json sets site=qualitynode-docs, so plain `--only hosting`
+        # targets it. firebase-tools reads the credentials google-github-actions/auth
+        # exports as GOOGLE_APPLICATION_CREDENTIALS. 15.17.0 predates the 15.22.3
+        # double-release bug. Mirrors the working qualitynode_web deploy.
+        run: npx --yes firebase-tools@15.17.0 deploy --only hosting --project qualitynode-1b4a8 --non-interactive
