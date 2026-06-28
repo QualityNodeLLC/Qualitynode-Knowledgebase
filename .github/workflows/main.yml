@@ -137,3 +137,6 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           channelId: live
           projectId: qualitynode-1b4a8
+          # Pin below firebase-tools 15.22.3, which double-releases to the live
+          # channel and exits 1 with a 400 "current active version" (firebase-tools#10730).
+          firebaseToolsVersion: 15.22.1
