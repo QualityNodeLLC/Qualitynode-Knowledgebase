@@ -2,7 +2,8 @@
 library;
 
 import 'package:jaspr/server.dart';
-import 'package:arcane_inkwell/arcane_inkwell.dart' hide runApp;
+import 'package:arcane_lexicon/arcane_lexicon.dart' hide runApp;
+import 'package:arcane_jaspr_neon/arcane_jaspr_neon.dart';
 
 import 'main.server.options.dart';
 
@@ -29,11 +30,11 @@ void main() async {
               href: 'https://discord.qualitynode.com',
               external: true),
         ],
-        footerText: 'Built with Arcane Inkwell',
+        footerText: 'Built with Arcane Lexicon',
         sidebarFooter: 'QualityNode',
         sidebarFooterUrl: 'https://qualitynode.com',
       ),
-      stylesheet: const ShadcnStylesheet(theme: ShadcnTheme.charcoal),
+      stylesheet: const NeonStylesheet(),
     ),
   );
 }

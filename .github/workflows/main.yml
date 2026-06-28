@@ -24,6 +24,20 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Checkout pinned arcane_jaspr
+        uses: actions/checkout@v4
+        with:
+          repository: ArcaneArts/arcane_jaspr
+          ref: 4f383f00a8a1ebeaec5e6e7a96e83606514fd2cd
+          path: .deps/arcane_jaspr
+
+      - name: Checkout pinned arcane_lexicon
+        uses: actions/checkout@v4
+        with:
+          repository: ArcaneArts/arcane_lexicon
+          ref: dc40cdcdfad51966e51cfe757c00907d71981e8c
+          path: .deps/arcane_lexicon
+
       - name: Setup Dart
         uses: dart-lang/setup-dart@v1
         with:
@@ -72,6 +86,20 @@ jobs:
           ref: ${{ github.ref }}
           fetch-depth: 0
 
+      - name: Checkout pinned arcane_jaspr
+        uses: actions/checkout@v4
+        with:
+          repository: ArcaneArts/arcane_jaspr
+          ref: 4f383f00a8a1ebeaec5e6e7a96e83606514fd2cd
+          path: .deps/arcane_jaspr
+
+      - name: Checkout pinned arcane_lexicon
+        uses: actions/checkout@v4
+        with:
+          repository: ArcaneArts/arcane_lexicon
+          ref: dc40cdcdfad51966e51cfe757c00907d71981e8c
+          path: .deps/arcane_lexicon
+
       - name: Pull latest changes
         run: git pull origin ${{ github.ref_name }} || true
 
@@ -81,7 +109,7 @@ jobs:
           channel: stable
 
       - name: Install Jaspr CLI
-        run: dart pub global activate jaspr_cli
+        run: dart pub global activate jaspr_cli 0.22.3
 
       - name: Add pub cache to PATH
         run: echo "$HOME/.pub-cache/bin" >> $GITHUB_PATH

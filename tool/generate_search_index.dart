@@ -9,8 +9,8 @@ library;
 
 import 'dart:io' as io;
 
-// Use direct package imports (these are all exported from arcane_inkwell)
-import 'package:arcane_inkwell/arcane_inkwell.dart';
+// Use direct package imports (these are all exported from arcane_lexicon)
+import 'package:arcane_lexicon/arcane_lexicon.dart';
 
 void main() async {
   print('Generating search index...');

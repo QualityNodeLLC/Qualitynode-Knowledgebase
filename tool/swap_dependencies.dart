@@ -11,14 +11,14 @@ import 'dart:io';
 
 const Map<String, DependencyInfo> dependencies = {
   'arcane_jaspr': DependencyInfo(
-    localPath: '/Users/brianfopiano/Developer/RemoteGit/ArcaneArts/arcane_jaspr',
+    localPath: '.deps/arcane_jaspr',
     gitUrl: 'https://github.com/ArcaneArts/arcane_jaspr',
-    gitRef: 'master',
+    gitRef: '4f383f00a8a1ebeaec5e6e7a96e83606514fd2cd',
   ),
-  'arcane_inkwell': DependencyInfo(
-    localPath: '/Users/brianfopiano/Developer/RemoteGit/ArcaneArts/arcane_inkwell',
-    gitUrl: 'https://github.com/ArcaneArts/arcane_inkwell',
-    gitRef: 'master',
+  'arcane_lexicon': DependencyInfo(
+    localPath: '.deps/arcane_lexicon',
+    gitUrl: 'https://github.com/ArcaneArts/arcane_lexicon',
+    gitRef: 'dc40cdcdfad51966e51cfe757c00907d71981e8c',
   ),
 };
 
