@@ -1,6 +1,6 @@
 ---
 title: Billing
-description: Manage payments, subscriptions, and invoices.
+description: Find the current billing controls and contact billing support.
 icon: credit-card
 order: 1
 author: Brian Neumann-Fopiano
@@ -8,7 +8,8 @@ author: Brian Neumann-Fopiano
 
 # Billing
 
-Manage your QualityNode subscription, payments, and billing information.
+The billing portal is the source of truth for current prices, payment options,
+subscription state, invoices, and available account actions.
 
 ## Topics
 
@@ -18,8 +19,6 @@ Manage your QualityNode subscription, payments, and billing information.
 - [Upgrades and Downgrades](/billing/plan-changes)
 - [Refunds](/billing/refunds)
 
-## Quick Links
-
-- View your current subscription status in your dashboard
-- Update payment methods in Account Settings
-- Download invoices from Billing History
+If the portal does not show the action you need, open a billing ticket or email
+support@qualitynode.net. Do not send card numbers, passwords, or other payment
+credentials in a support request.

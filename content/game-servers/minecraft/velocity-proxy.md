@@ -7,9 +7,9 @@ author: Brian Neumann-Fopiano
 
 # Velocity Proxy Setup
 
-Velocity is a high-performance proxy that links multiple Minecraft servers under a single IP address, creating a seamless network experience.
+Velocity is a high-performance proxy that links multiple Minecraft servers under one IP address.
 
-## What is a Proxy?
+## Proxy overview
 
 A proxy server acts as a gateway that forwards player connections to backend servers. Players connect once and can switch between servers (lobby, survival, creative, etc.) without disconnecting.
 
@@ -18,9 +18,9 @@ A proxy server acts as a gateway that forwards player connections to backend ser
 - Two or more Paper-based Minecraft servers
 - A Velocity proxy server (contact QualityNode support to provision one)
 
-## Configuration Steps
+## Configuration steps
 
-### Step 1: Configure the Proxy
+### Step 1: Configure the proxy
 
 1. Access your proxy server in the control panel
 2. Go to the **Files** tab
@@ -29,27 +29,28 @@ A proxy server acts as a gateway that forwards player connections to backend ser
 
 ```toml
 [servers]
-lobby = "172.18.0.1:25565"
-survival = "172.18.0.2:25565"
-creative = "172.18.0.3:25565"
+lobby = "LOBBY_HOST_FROM_PANEL:LOBBY_PORT_FROM_PANEL"
+survival = "SURVIVAL_HOST_FROM_PANEL:SURVIVAL_PORT_FROM_PANEL"
+creative = "CREATIVE_HOST_FROM_PANEL:CREATIVE_PORT_FROM_PANEL"
 
 try = ["lobby"]
 ```
 
-Replace the addresses with your actual backend server internal IPs.
+Replace every placeholder with the host and port displayed for that backend
+server. Do not copy an address from another account or an example.
 
-### Step 2: Get the Forwarding Secret
+### Step 2: Get the forwarding secret
 
 1. In your proxy's **Files** tab, open `forwarding.secret`
 2. Copy the entire text content
 
 This secret enables secure communication between the proxy and backend servers.
 
-### Step 3: Restart the Proxy
+### Step 3: Restart the proxy
 
 Restart your proxy to apply the configuration changes.
 
-### Step 4: Configure Backend Servers
+### Step 4: Configure backend servers
 
 For **each** backend server:
 
@@ -73,11 +74,11 @@ proxies:
     secret: "paste-your-forwarding-secret-here"
 ```
 
-### Step 5: For Fabric Servers
+### Step 5: Configure Fabric servers
 
 If any backend server runs Fabric, install [FabricProxy-Lite](https://modrinth.com/mod/fabricproxy-lite) and configure it with your forwarding secret.
 
-### Step 6: For Geyser (Bedrock Support)
+### Step 6: Configure Geyser (Bedrock support)
 
 To allow Bedrock players on your network:
 
@@ -85,11 +86,11 @@ To allow Bedrock players on your network:
 2. Install [Geyser-Velocity](https://modrinth.com/plugin/geyser) on the proxy
 3. Install [Floodgate-Velocity](https://modrinth.com/plugin/floodgate) on the proxy
 
-### Step 7: Launch and Test
+### Step 7: Launch and test
 
 Start all servers and connect through the proxy. Use `/server <name>` to switch between servers.
 
-## Useful Proxy Plugins
+## Useful proxy plugins
 
 | Plugin | Purpose |
 |--------|---------|
@@ -97,7 +98,7 @@ Start all servers and connect through the proxy. Use `/server <name>` to switch 
 | [LimboQueue](https://modrinth.com/plugin/limboqueue) | Queue system for full servers |
 | [VelocityResourcepacks](https://modrinth.com/plugin/velocityresourcepacks) | Server-specific resource packs |
 
-## Architecture Example
+## Architecture example
 
 ```
 Players
@@ -126,11 +127,10 @@ Players
 
 ### High latency between servers
 
-- Use internal IPs (172.x.x.x) for backend connections
+- Use the backend connection values displayed by the server panel
 - Ensure all servers are in the same datacenter
 
-## See Also
+## See also
 
 - [Proxy Software Comparison](/game-servers/minecraft/proxy-comparison)
-- [Bedrock Crossplay](/game-servers/minecraft/bedrock-crossplay)
 - [MySQL Databases](/game-servers/minecraft/mysql-database)

@@ -1,6 +1,6 @@
 ---
 title: Creating Your First Server
-description: Step-by-step guide to deploying your first game server on QualityNode.
+description: Prepare and deploy a supported game server from your QualityNode account.
 icon: server
 order: 4
 author: Brian Neumann-Fopiano
@@ -8,51 +8,25 @@ author: Brian Neumann-Fopiano
 
 # Creating Your First Server
 
-This guide walks you through setting up your first game server.
+The account dashboard and checkout show the games and configurations currently
+available to you.
 
-## Step 1: Select Your Game
+## Before ordering
 
-From your dashboard, click **Create Server** and choose from our supported games:
+1. Confirm the game appears in the current supported catalog.
+2. [Compare the current plans](/getting-started/choosing-a-plan).
+3. Choose capacity for the expected player count, world size, and mod workload.
+4. Review the final price and order details shown before checkout.
 
-- Minecraft (Java & Bedrock)
-- Rust
-- ARK: Survival Evolved
-- Valheim
-- And many more...
+## After deployment
 
-## Step 2: Configure Server Settings
+1. Open the new server in the control panel.
+2. Use the connection address and port displayed for that server.
+3. Review the game-specific guide before changing software or configuration.
+4. Create a backup before major changes when the panel provides that action.
 
-Choose your server configuration:
-
-1. **Server Name** - Give your server a memorable name
-2. **Location** - Select the data center closest to your players
-3. **Plan** - Choose your hosting tier
-4. **Game Version** - Select the game version to run
-
-## Step 3: Customize Your Server
-
-After deployment, customize your server:
-
-```properties
-# Example: Minecraft server.properties
-server-name=My Awesome Server
-max-players=20
-difficulty=normal
-pvp=true
-```
-
-## Step 4: Connect and Play
-
-Your server is ready! Find your connection details in the dashboard:
-
-- **IP Address**: Displayed on your server panel
-- **Port**: Game-specific (e.g., 25565 for Minecraft)
-
-> [!TIP]
-> Share your server IP with friends or list it on game server browsers to grow your community.
-
-## Next Steps
+## Next steps
 
 - [Understanding Your Dashboard](/getting-started/dashboard-overview)
-- [Installing Mods and Plugins](/server-management/mods-plugins)
-- [Configuring Backups](/server-management/backups)
+- [Browse Game Server Guides](/game-servers)
+- [Billing Help](/billing)

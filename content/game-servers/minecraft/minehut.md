@@ -9,7 +9,7 @@ author: Brian Neumann-Fopiano
 
 Enable players from the Minehut network to connect to your QualityNode Minecraft server.
 
-## What is Minehut?
+## Minehut overview
 
 Minehut is a free Minecraft server platform with a large player community. By connecting your server, Minehut players can join using `/join <servername>` from the Minehut lobby.
 
@@ -18,15 +18,15 @@ Minehut is a free Minecraft server platform with a large player community. By co
 - A QualityNode Minecraft server (Paper-based recommended)
 - A Minehut External Server plan ($5/month from Minehut)
 
-## Setup Steps
+## Setup steps
 
-### Step 1: Get Your Server Details
+### Step 1: Get your server details
 
 1. Go to your QualityNode control panel
 2. Select your server
 3. Copy the IP address and port from the top-right of the console
 
-### Step 2: Purchase Minehut External Server Plan
+### Step 2: Purchase a Minehut external server plan
 
 1. Visit the [Minehut control panel](https://minehut.com/)
 2. Purchase an External Server plan (~$5/month)
@@ -38,12 +38,12 @@ In Minehut's external server settings:
 - Enter your QualityNode server IP and port
 - Select server type: **Standalone/Paper** (or **Velocity** if using a proxy)
 
-### Step 4: Enable Minehut Support on QualityNode
+### Step 4: Enable Minehut support on QualityNode
 
 1. In your QualityNode control panel, go to the **Startup** tab
 2. Enable the **"Enable Minehut Support"** option
 
-### Step 5: Configure Server Files
+### Step 5: Configure server files
 
 #### Edit server.properties
 
@@ -58,12 +58,12 @@ proxies:
   proxy-protocol: true
 ```
 
-### Step 6: Restart and Connect
+### Step 6: Restart and connect
 
 1. Restart your server
 2. Players can now join from Minehut using `/join <your-server-name>`
 
-## Custom Domain (Optional)
+## Custom domain (optional)
 
 Minehut supports custom domains that route through their network. See Minehut's documentation for setup instructions.
 
@@ -85,7 +85,6 @@ Minehut supports custom domains that route through their network. See Minehut's 
 - Wait for Minehut's systems to update (can take a few minutes)
 - Double-check the IP and port configuration
 
-## See Also
+## See also
 
-- [Custom Domains](/game-servers/minecraft/custom-domain)
-- [Getting Started](/game-servers/minecraft/getting-started)
+- [Server Properties](/game-servers/minecraft/server-properties)

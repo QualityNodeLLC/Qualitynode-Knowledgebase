@@ -3,6 +3,7 @@ title: Simple Voice Chat
 description: Add proximity-based voice communication to your Minecraft server.
 order: 22
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # Simple Voice Chat

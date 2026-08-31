@@ -7,9 +7,9 @@ author: Brian Neumann-Fopiano
 
 # Choosing Minecraft Server Software
 
-QualityNode offers multiple Minecraft server software options. This guide helps you choose the right one for your needs.
+QualityNode offers several Minecraft server software options. Compare them by mod support, plugin support, and workload.
 
-## Overview
+## Options
 
 | Software | Best For | Supports |
 |----------|----------|----------|
@@ -72,12 +72,12 @@ These are Paper forks with additional performance optimizations and configuratio
 
 **Best for:** Large networks requiring maximum performance and customization.
 
-## Software to Avoid
+## Software to avoid
 
 > [!CAUTION]
 > Avoid "hybrid" software like Mohist and Magma that attempt to combine mods and plugins. These often cause stability issues and potential world corruption. Choose either a mod-based or plugin-based platform.
 
-## How to Change Software
+## How to change software
 
 1. Go to your server's control panel
 2. Click **Software** in the sidebar

@@ -1,0 +1,12 @@
+{
+  "name": "qualitynode-knowledgebase-browser-policy",
+  "private": true,
+  "scripts": {
+    "design-policy": "node run_knowledgebase_policy.mjs",
+    "serve-build": "serve ../../build/jaspr --no-clipboard"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "serve": "14.2.6"
+  }
+}

@@ -7,11 +7,11 @@ author: Brian Neumann-Fopiano
 
 # Adding Datapacks
 
-Datapacks are vanilla-compatible packs that modify server behavior without requiring mods. They can add biomes, adjust game mechanics, create custom recipes, and more.
+Datapacks modify server behavior without requiring mods. They can add biomes, adjust game mechanics, and define custom recipes.
 
-## What Are Datapacks?
+## Datapacks
 
-Datapacks work with any Minecraft server software (including vanilla) and don't require clients to install anything. They're perfect for:
+Datapacks work with vanilla-compatible server software and don't require a client install. Common uses include:
 
 - Adding custom biomes and structures
 - Tweaking game mechanics
@@ -19,30 +19,30 @@ Datapacks work with any Minecraft server software (including vanilla) and don't 
 - Loot table modifications
 - Custom advancements
 
-## Installation Steps
+## Installation steps
 
-### Step 1: Download a Datapack
+### Step 1: Download a datapack
 
 Recommended sources:
 - [Modrinth Datapacks](https://modrinth.com/datapacks)
 - [Planet Minecraft](https://planetminecraft.com/data-packs)
 - [Vanilla Tweaks](https://vanillatweaks.net/picker/datapacks)
 
-### Step 2: Access the Datapack Folder
+### Step 2: Open the datapack folder
 
 1. Go to your control panel and select your server
 2. Click **Files** in the sidebar
 3. Navigate to your world folder (usually named `world`)
 4. Open the `datapacks` folder
 
-### Step 3: Upload Your Datapack
+### Step 3: Upload your datapack
 
 Drag and drop the `.zip` file into the browser window.
 
 > [!NOTE]
 > For Vanilla Tweaks, you may need to extract the downloaded file first, then upload the individual datapack zip files.
 
-### Step 4: Activate and Verify
+### Step 4: Activate and verify
 
 Restart your server, then verify the datapack loaded:
 
@@ -50,23 +50,23 @@ Restart your server, then verify the datapack loaded:
 datapack list
 ```
 
-This shows all enabled and available datapacks.
+The command lists enabled and available datapacks.
 
-## Managing Datapacks
+## Managing datapacks
 
-### Enable a Datapack
+### Enable a datapack
 
 ```
 datapack enable "file/<datapack_name>"
 ```
 
-### Disable a Datapack
+### Disable a datapack
 
 ```
 datapack disable "file/<datapack_name>"
 ```
 
-## Performance Considerations
+## Performance considerations
 
 > [!WARNING]
 > Heavy datapacks can impact server performance. Lightweight packs like Vanilla Tweaks typically cause no issues, but complex terrain generation or entity modifications may increase lag.
@@ -76,7 +76,7 @@ If you experience performance issues:
 2. Use fewer or simpler datapacks
 3. Consider using mods instead for complex modifications
 
-## Multi-World Servers
+## Multi-world servers
 
 Datapacks uploaded to your main world's datapack folder apply globally across all dimensions (Overworld, Nether, End).
 
@@ -94,7 +94,6 @@ Datapacks uploaded to your main world's datapack folder apply globally across al
 - The datapack may require a world reset to take effect (for world generation changes)
 - Some datapacks conflict with each other
 
-## See Also
+## See also
 
 - [Reset Your World](/game-servers/minecraft/reset-world)
-- [Adding Resource Packs](/game-servers/minecraft/resource-packs)

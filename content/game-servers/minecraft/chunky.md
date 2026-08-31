@@ -9,7 +9,7 @@ author: Brian Neumann-Fopiano
 
 Chunky pre-generates world chunks before players explore them, eliminating lag caused by real-time chunk generation.
 
-## Why Pre-generate?
+## Pre-generation benefits
 
 When players explore new areas, your server must generate terrain on the fly. This causes:
 - TPS drops during exploration
@@ -22,11 +22,12 @@ Pre-generation handles this work in advance, resulting in smooth gameplay.
 
 Download Chunky from [Modrinth](https://modrinth.com/plugin/chunky) and install it like any other mod or plugin.
 
-See [Uploading Mods and Plugins](/game-servers/minecraft/mods-plugins) for installation steps.
+Install Chunky using the plugin installation workflow currently shown by your
+server panel.
 
-## Basic Usage
+## Basic usage
 
-### Step 1: Select Your World
+### Step 1: Select your world
 
 Specify which dimension to generate:
 
@@ -44,7 +45,7 @@ chunky world the_nether
 chunky world the_end
 ```
 
-### Step 2: Set the Radius
+### Step 2: Set the radius
 
 Define how many blocks to generate in each direction from spawn:
 
@@ -52,7 +53,7 @@ Define how many blocks to generate in each direction from spawn:
 chunky radius 10000
 ```
 
-### Storage Requirements
+### Storage requirements
 
 | Radius | Approximate Size |
 |--------|------------------|
@@ -64,7 +65,7 @@ chunky radius 10000
 > [!WARNING]
 > Large pre-generation tasks require significant storage. Check your available disk space before starting.
 
-### Step 3: Start Generation
+### Step 3: Start generation
 
 ```
 chunky start
@@ -72,13 +73,13 @@ chunky start
 
 Generation can take many hours for large radii. The server remains playable during this process, though with slightly reduced performance.
 
-### Reduce Console Spam
+### Reduce console spam
 
 ```
 chunky silent
 ```
 
-## Control Commands
+## Control commands
 
 | Command | Description |
 |---------|-------------|
@@ -87,9 +88,9 @@ chunky silent
 | `chunky cancel` | Abandon generation entirely |
 | `chunky progress` | Check current progress |
 
-## Important Notes
+## Important notes
 
-### Generated vs Loaded Chunks
+### Generated vs loaded chunks
 
 Pre-generated chunks are **not** loaded. They're saved to disk but require a player nearby to become active.
 
@@ -98,13 +99,13 @@ This means:
 - Automated systems don't run in unloaded chunks
 - Generation only eliminates the *creation* lag, not loading lag
 
-### Always-Loaded Chunks
+### Always-loaded chunks
 
 For chunks that need to stay active:
 - Spawn chunks (small area around world spawn)
 - Use `/forceload` to permanently load specific chunks
 
-## Alternative: World Border
+## Alternative: World border
 
 Set a world border before pre-generating to limit exploration:
 
@@ -115,7 +116,7 @@ worldborder set 20000
 
 Then pre-generate only within that border.
 
-## See Also
+## See also
 
 - [Diagnosing Server Lag](/game-servers/minecraft/diagnosing-lag)
 - [Reset Your World](/game-servers/minecraft/reset-world)

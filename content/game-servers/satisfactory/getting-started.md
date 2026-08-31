@@ -4,6 +4,7 @@ description: Set up and configure your new Satisfactory dedicated server on Qual
 icon: rocket
 order: 2
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # Getting Started with Satisfactory

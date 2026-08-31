@@ -7,9 +7,9 @@ author: Brian Neumann-Fopiano
 
 # Reset Your World
 
-This guide explains how to completely reset your Minecraft world and optionally configure a new seed or world type.
+Follow these steps to delete the current world and configure an optional seed or world type.
 
-## Step 1: Stop Your Server
+## Step 1: Stop your server
 
 1. Go to your control panel and select your server
 2. Click the **Stop** button
@@ -17,7 +17,7 @@ This guide explains how to completely reset your Minecraft world and optionally 
 > [!WARNING]
 > This process permanently deletes your world. Create a backup first if you want to keep it.
 
-## Step 2: Delete World Folders
+## Step 2: Delete world folders
 
 1. Click the **Files** tab in the sidebar
 2. Delete the `world` folder
@@ -30,7 +30,7 @@ This guide explains how to completely reset your Minecraft world and optionally 
 - `DIM-1` (Nether only)
 - `DIM1` (End only)
 
-## Step 3: Set a Custom Seed (Optional)
+## Step 3: Set a custom seed (optional)
 
 To use a specific world seed:
 
@@ -45,7 +45,7 @@ level-seed=12345678
 
 Leave empty for a random seed.
 
-## Step 4: Configure World Type (Optional)
+## Step 4: Configure the world type (optional)
 
 Modify the `level-type=` setting in server.properties:
 
@@ -60,25 +60,25 @@ Modify the `level-type=` setting in server.properties:
 level-type=minecraft:amplified
 ```
 
-## Step 5: Start Your Server
+## Step 5: Start your server
 
 Click **Start** to boot your server. The new world generates automatically, typically within 10 seconds to 2 minutes depending on your settings.
 
-## Resetting Only Specific Dimensions
+## Resetting specific dimensions
 
-### Reset Nether Only
+### Reset only the Nether
 
 **Paper servers:** Delete only `world_nether`
 
 **Other servers:** Delete only `DIM-1` inside the `world` folder
 
-### Reset End Only
+### Reset only the End
 
 **Paper servers:** Delete only `world_the_end`
 
 **Other servers:** Delete only `DIM1` inside the `world` folder
 
-## Keeping Player Data
+## Keeping player data
 
 If you want to reset the world but keep player inventories and progress:
 
@@ -92,8 +92,6 @@ If you want to reset the world but keep player inventories and progress:
 > [!NOTE]
 > This preserves inventories but not player positions. Players spawn at the new world's spawn point.
 
-## See Also
+## See also
 
-- [Upload a Custom World](/game-servers/minecraft/custom-world)
-- [Automatic Backups](/game-servers/minecraft/automatic-backups)
 - [Pre-generate with Chunky](/game-servers/minecraft/chunky)

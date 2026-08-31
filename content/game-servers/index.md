@@ -1,64 +1,26 @@
 ---
 title: Game Servers
-description: Game-specific guides for setting up and configuring your servers.
+description: Published configuration guides for games in the current QualityNode catalog.
 order: 1
 author: Brian Neumann-Fopiano
 ---
 
 # Game Server Guides
 
-Find detailed setup guides and configuration tips for each supported game.
+The billing portal is authoritative for the games currently available to order.
+This section contains only the guides that are ready to publish.
 
-## Fully Documented Games
+## Minecraft
 
-These games have comprehensive documentation with setup guides, configuration options, and troubleshooting tips.
+- [Minecraft guides](/game-servers/minecraft)
+- [Choosing server software](/game-servers/minecraft/server-software)
+- [Server properties](/game-servers/minecraft/server-properties)
+- [Commands and permissions](/game-servers/minecraft/commands)
 
-### Minecraft
+## Other guide sections
 
-Java and Bedrock editions with full modding and plugin support. 
+Use the game navigation to browse other published sections. A game appearing in
+this knowledgebase does not override availability shown by the billing portal.
 
-- [Getting Started](/game-servers/minecraft/getting-started) - Initial setup
-- [Choosing Server Software](/game-servers/minecraft/server-software) - Paper, Fabric, Forge
-- [Installing Modpacks](/game-servers/minecraft/modpacks) - CurseForge and Modrinth
-- [All Minecraft Guides](/game-servers/minecraft)
-
-## In Development
-
-These sections are being built out with more guides coming soon.
-
-### Valheim
-
-Viking survival with dedicated server support.
-
-- [Getting Started](/game-servers/valheim/getting-started)
-- [Installing Mods](/game-servers/valheim/mods)
-- [All Valheim Guides](/game-servers/valheim)
-
-### Satisfactory
-
-Factory-building multiplayer with dedicated servers.
-
-- [Getting Started](/game-servers/satisfactory/getting-started)
-- [Installing Mods](/game-servers/satisfactory/mods)
-- [All Satisfactory Guides](/game-servers/satisfactory)
-
-## Other Supported Games
-
-We support many additional games including:
-
-- ARK: Survival Evolved
-- Rust
-- 7 Days to Die
-- Terraria
-- Project Zomboid
-- And many more...
-
-> [!TIP]
-> Don't see your game? Contact support@qualitynode.net - we may be able to add it!
-
-## General Server Management
-
-For topics that apply across all games, see:
-
-- [Getting Started](/getting-started) - Account setup and first server
-- [Billing](/billing) - Plans, payments, and subscriptions
+Need a guide that is not published? Email support@qualitynode.net or
+[join the QualityNode Discord](https://discord.qualitynode.com).

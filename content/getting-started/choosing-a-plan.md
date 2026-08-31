@@ -1,49 +1,36 @@
 ---
-title: Choosing the Right Plan
-description: Compare QualityNode hosting plans to find the best fit for your needs.
+title: Choosing a Plan
+description: Compare the current QualityNode game server plans.
 icon: layers
 order: 3
 author: Brian Neumann-Fopiano
 ---
 
-# Choosing the Right Plan
+# Choosing a Plan
 
-QualityNode offers four hosting tiers to fit every need and budget.
+Choose capacity for the supported game and expected player count. The billing
+portal is the final source for current price and availability.
 
-## Plan Comparison
+## Plan comparison
 
-| Feature | Threshold | Agent | Director | Astral |
-|---------|-----------|-------|----------|--------|
+| Feature | Starter | Standard | Performance | Enterprise |
+|---------|---------|----------|-------------|------------|
 | RAM | 2 GB | 4 GB | 8 GB | 16 GB |
-| CPU | 100% | 200% | 400% | 800% |
-| Storage | 10 GB SSD | 25 GB NVMe | 50 GB NVMe | 100 GB NVMe |
-| Players | ~10 | ~25 | ~50 | 100+ |
+| CPU | 1 vCPU | 2 vCPU | 4 vCPU | 8 vCPU |
+| Storage | 15 GB NVMe | 30 GB NVMe | 60 GB NVMe | 120 GB NVMe |
+| Player guidance | ~10 | ~25 | ~50 | 100+ |
 | Price | $4.99/mo | $9.99/mo | $19.99/mo | $39.99/mo |
 
-## Plan Recommendations
+Player counts are estimates. Game version, mods, world size, and player behavior
+can change resource requirements.
 
-### Threshold
-Best for: Small groups, testing, low-resource games like Terraria
+## Before ordering
 
-### Agent
-Best for: Medium communities, most games at moderate scale
+1. Confirm that the game is in the supported catalog.
+2. Compare RAM, CPU, storage, and player guidance.
+3. Review the current price and order details in the billing portal.
+4. Contact support when workload requirements are unclear.
 
-### Director
-Best for: Large communities, resource-intensive games, multiple mods
+## Next step
 
-### Astral
-Best for: Large-scale servers, professional communities, maximum performance
-
-> [!NOTE]
-> You can upgrade your plan at any time from your dashboard. Downgrades are processed at the end of your billing cycle.
-
-## Saving with Annual Billing
-
-Save up to 17% when you choose annual billing. Annual plans include:
-- Two months free
-- Priority support
-- Price lock guarantee
-
-## Next Steps
-
-Ready to get started? [Create your first server](/getting-started/first-server).
+[Create your first server](/getting-started/first-server).

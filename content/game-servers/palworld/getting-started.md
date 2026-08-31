@@ -1,6 +1,7 @@
 ---
 title: Getting Started with Your Palworld Server
 description: Essential first steps for setting up your new Palworld server on QualityNode.
+draft: true
 order: 1
 author: QualityNode
 tags:

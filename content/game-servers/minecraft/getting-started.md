@@ -3,6 +3,7 @@ title: Getting Started with Your Minecraft Server
 description: Essential first steps for setting up your new Minecraft server on QualityNode.
 order: 2
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # Getting Started with Your Minecraft Server

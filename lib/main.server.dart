@@ -16,25 +16,29 @@ void main() async {
         name: 'QualityNode KnowledgeBase',
         description: 'Game server hosting documentation and guides',
         contentDirectory: 'content',
-        githubUrl: 'https://github.com/QualityNodeLLC/Qualitynode-Knowledgebase',
+        githubUrl:
+            'https://github.com/QualityNodeLLC/Qualitynode-Knowledgebase',
         showEditLink: true,
         editBranch: 'main',
         defaultTheme: KBThemeMode.system,
         headerLinks: [
           NavLink(
-              label: 'Website',
-              href: 'https://qualitynode.com',
-              external: true),
+            label: 'Website',
+            href: 'https://qualitynode.com',
+            external: true,
+          ),
           NavLink(
-              label: 'Discord',
-              href: 'https://discord.qualitynode.com',
-              external: true),
+            label: 'Discord',
+            href: 'https://discord.qualitynode.com',
+            external: true,
+          ),
         ],
         footerText: 'Built with Arcane Lexicon',
         sidebarFooter: 'QualityNode',
         sidebarFooterUrl: 'https://qualitynode.com',
       ),
       stylesheet: const NeonStylesheet(),
+      generateSearchIndex: false,
     ),
   );
 }

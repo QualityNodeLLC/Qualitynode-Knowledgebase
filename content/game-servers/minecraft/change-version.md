@@ -9,24 +9,24 @@ author: Brian Neumann-Fopiano
 
 Update your Minecraft version or switch between server software options.
 
-## Changing Version or Software
+## Changing version or software
 
-### Step 1: Access the Control Panel
+### Step 1: Access the control panel
 
 Go to your control panel and select your server.
 
-### Step 2: Open Software Selection
+### Step 2: Open software selection
 
 Click the **Software** button in the sidebar to view available options.
 
-### Step 3: Select New Software
+### Step 3: Select new software
 
 Choose your desired server software:
 - Paper, Purpur (plugins)
 - Fabric, Forge, NeoForge (mods)
 - Vanilla (unmodified)
 
-### Step 4: Choose Version
+### Step 4: Choose a version
 
 Select the Minecraft version you want to run. Available addons (like Geyser for Bedrock support) will be shown.
 
@@ -34,7 +34,7 @@ Select the Minecraft version you want to run. Available addons (like Geyser for 
 
 Click **Install** at the bottom. Your server will use the new software on its next startup.
 
-## Using a Custom Server Jar
+## Using a custom server jar
 
 Want to use a custom or unsupported server jar?
 
@@ -45,7 +45,7 @@ Want to use a custom or unsupported server jar?
 
 The server will automatically use your custom jar on boot.
 
-## Version Compatibility
+## Version compatibility
 
 > [!IMPORTANT]
 > Worlds generated in newer Minecraft versions cannot be loaded by older versions.
@@ -60,28 +60,28 @@ Requires one of:
 - Delete the `world` folder (loses all progress)
 - Use [Chunker](https://chunker.app/) to convert world formats
 
-## Switching Software Types
+## Switching software types
 
-### Plugins to Mods (Paper to Fabric)
+### Plugins to mods (Paper to Fabric)
 
 1. Plugins won't work on modded servers
 2. Download mod equivalents for your plugins
 3. Switch software and install mods
 
-### Mods to Plugins (Fabric to Paper)
+### Mods to plugins (Fabric to Paper)
 
 1. Mods won't work on plugin servers
 2. Find plugin alternatives for your mods
 3. Switch software and install plugins
 
-### Keeping Your World
+### Keeping your world
 
 World data generally transfers between server software:
 - Your builds and terrain are preserved
 - Plugin/mod-specific data may not transfer
 - Custom dimensions from mods will be lost
 
-## After Switching
+## After switching
 
 1. Verify your server starts correctly
 2. Check that plugins/mods load properly
@@ -107,8 +107,7 @@ World data generally transfers between server software:
 - Some mod/plugin features don't have equivalents
 - Check alternative software for similar functionality
 
-## See Also
+## See also
 
 - [Choosing Server Software](/game-servers/minecraft/server-software)
 - [Reset Your World](/game-servers/minecraft/reset-world)
-- [Download Your Backup](/game-servers/minecraft/download-backup)

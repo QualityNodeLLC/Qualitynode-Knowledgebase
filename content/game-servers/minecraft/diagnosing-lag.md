@@ -7,9 +7,9 @@ author: Brian Neumann-Fopiano
 
 # Diagnosing Server Lag
 
-This guide provides a systematic approach to identifying and resolving server lag issues.
+Start by separating server lag from client FPS or connection problems.
 
-## Types of Lag
+## Types of lag
 
 Before troubleshooting, identify which type of lag you're experiencing:
 
@@ -19,14 +19,14 @@ Before troubleshooting, identify which type of lag you're experiencing:
 | **Client FPS drops** | Choppy visuals, low framerate | Individual player |
 | **Connection lag** | High ping, delayed actions | Individual player |
 
-### Connection Issues (One Player)
+### Connection issues (one player)
 
 If only one player experiences lag:
 - Check their internet connection
 - Try using [Cloudflare 1.1.1.1](https://1.1.1.1/) for improved DNS
 - Verify they're connecting to the nearest server region
 
-### Client FPS Issues
+### Client FPS issues
 
 If a player has low FPS:
 - Increase allocated RAM in their launcher
@@ -35,9 +35,9 @@ If a player has low FPS:
   - [Entity Culling](https://modrinth.com/mod/entityculling)
   - [Starlight](https://modrinth.com/mod/starlight)
 
-## Diagnosing Server Lag
+## Diagnosing server lag
 
-### Step 1: Install Spark
+### Step 1: Install spark
 
 [Spark](https://modrinth.com/plugin/spark) is a performance profiling tool. It comes pre-installed on:
 - QualityNode Fabric/Forge modded servers
@@ -64,7 +64,7 @@ spark tps
 
 A consistent 20.0 TPS means the server isn't overloaded. Look for connection or client issues instead.
 
-### Step 3: Generate a Profile
+### Step 3: Generate a profile
 
 If TPS drops below 20, create a performance report:
 
@@ -78,9 +78,9 @@ Wait 1-2 minutes while the server is lagging, then:
 spark profiler stop
 ```
 
-This generates a shareable link to analyze.
+Spark returns a shareable profile link.
 
-### Step 4: Analyze the Profile
+### Step 4: Analyze the profile
 
 The profiler shows what's consuming server resources. Click through the tree to identify:
 
@@ -88,9 +88,9 @@ The profiler shows what's consuming server resources. Click through the tree to 
 - Entity processing overhead
 - World generation costs
 
-## Common Causes and Solutions
+## Common causes and solutions
 
-### Too Many Entities
+### Too many entities
 
 **Symptoms:** Lag in specific areas with many mobs/items
 
@@ -100,7 +100,7 @@ The profiler shows what's consuming server resources. Click through the tree to 
 - Add mob stacking plugins (Paper servers)
 - Clear item entities regularly
 
-### Chunk Generation Lag
+### Chunk generation lag
 
 **Symptoms:** Lag when players explore new areas
 
@@ -109,7 +109,7 @@ The profiler shows what's consuming server resources. Click through the tree to 
 - Set a world border to limit exploration
 - Reduce `view-distance`
 
-### Heavy Datapacks
+### Heavy datapacks
 
 **Symptoms:** Constant low TPS, visible in spark profile
 
@@ -117,7 +117,7 @@ The profiler shows what's consuming server resources. Click through the tree to 
 - Remove or disable resource-intensive datapacks
 - Use mods instead for complex modifications
 
-### Problematic Mods/Plugins
+### Problematic mods/plugins
 
 **Symptoms:** Specific mod/plugin appears high in spark profile
 
@@ -127,7 +127,7 @@ The profiler shows what's consuming server resources. Click through the tree to 
 - Remove or replace the problematic mod
 - Contact the modpack maintainers for pre-made packs
 
-### Redstone Machines
+### Redstone machines
 
 **Symptoms:** Lag when near large redstone contraptions
 
@@ -136,7 +136,7 @@ The profiler shows what's consuming server resources. Click through the tree to 
 - Optimize or reduce redstone complexity
 - Disable redstone when not in use
 
-## Server Settings to Adjust
+## Server settings to adjust
 
 In `server.properties`:
 
@@ -147,7 +147,7 @@ simulation-distance=4
 
 For Paper servers, also check `config/paper-world-defaults.yml` for additional optimization options.
 
-## Getting Help
+## Getting help
 
 If you can't resolve the issue:
 
@@ -156,8 +156,6 @@ If you can't resolve the issue:
 3. List installed mods/plugins
 4. Contact QualityNode support with this information
 
-## See Also
+## See also
 
 - [Pre-generate with Chunky](/game-servers/minecraft/chunky)
-- [Pre-installed Fabric Mods](/game-servers/minecraft/fabric-mods)
-- [Automatic Restarts](/game-servers/minecraft/automatic-restarts)

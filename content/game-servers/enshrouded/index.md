@@ -1,6 +1,7 @@
 ---
 title: Enshrouded Server Hosting
 description: Guides for setting up and managing your Enshrouded dedicated server on QualityNode.
+draft: true
 order: 2
 author: QualityNode
 tags:

@@ -3,6 +3,7 @@ title: Bedrock Crossplay
 description: Allow Minecraft Bedrock Edition players to join your Java Edition server.
 order: 19
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # Bedrock Crossplay

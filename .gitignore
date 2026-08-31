@@ -5,6 +5,7 @@
 *.pyc
 *.swp
 .buildlog/
+.codegraph/
 .history
 
 
@@ -227,9 +228,11 @@ debug.log
 # Node (in case of tooling)
 node_modules/
 package-lock.json
+!test/browser/package-lock.json
 yarn.lock
 pnpm-lock.yaml
 .run/
+.firebase/
 
 web/search-index.json
 

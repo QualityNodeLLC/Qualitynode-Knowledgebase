@@ -1,6 +1,7 @@
 ---
 title: Palworld Server Hosting
 description: Guides for setting up and managing your Palworld dedicated server on QualityNode.
+draft: true
 order: 2
 author: QualityNode
 tags:

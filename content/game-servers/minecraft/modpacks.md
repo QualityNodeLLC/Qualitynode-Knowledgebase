@@ -3,6 +3,7 @@ title: Installing Modpacks
 description: How to install pre-made or custom modpacks on your QualityNode Minecraft server.
 order: 6
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # Installing Modpacks

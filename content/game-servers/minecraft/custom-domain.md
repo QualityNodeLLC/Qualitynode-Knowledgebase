@@ -1,108 +1,46 @@
 ---
 title: Custom Domains
-description: Point your own domain name to your Minecraft server for a professional address.
+description: Point a domain name to a Minecraft server when the feature is available on your plan.
 order: 18
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # Custom Domains
 
-A custom domain provides a professional, memorable address for your server instead of a raw IP like `66.118.235.132:25565`.
+The current plan configuration includes Custom Subdomain on Standard and Custom
+Domain on Performance and Enterprise. Confirm availability in the billing portal
+and server panel before changing DNS.
 
-## Domain Options
+## DNS Records
 
-### Free Subdomain
+Use the server address and port shown in your panel. Do not copy an address from
+another server or from an example.
 
-QualityNode offers free subdomains through the **Network** tab in your control panel. Choose from options like:
-- `yourserver.minecraft.horse`
-- Other available domain endings
-
-### Custom Domain
-
-Purchase a domain from registrars like:
-- [Porkbun](https://porkbun.com) (often cheapest)
-- [Cloudflare](https://cloudflare.com/products/registrar)
-- [Namecheap](https://namecheap.com)
-
-Most domains cost $1-10 per year.
-
-## Setup Instructions
-
-### Step 1: Access DNS Management
-
-Log into your domain registrar's control panel and find the DNS records section (sometimes labeled "Custom DNS" or "DNS Settings").
-
-### Step 2: Create an A Record
-
-Add a new DNS record with these settings:
+For a standard Java Edition port, create an A or AAAA record for the host name.
+For a nonstandard port, also create the Minecraft SRV record required by your
+DNS provider:
 
 | Field | Value |
 |-------|-------|
-| Type | A |
-| Name | `play` (or `@` for root domain) |
-| Address | Your server IP (without port) |
-| TTL | Auto or 3600 |
+| Service | `_minecraft` |
+| Protocol | `_tcp` |
+| Port | Port shown in the server panel |
+| Target | Host name that resolves to the server address |
 
-**Example:** For `play.yourdomain.com` pointing to `66.118.235.132`
+Keep any game-server record in DNS-only mode when the DNS provider's HTTP proxy
+does not support Minecraft traffic.
 
-<!-- TODO: Add screenshot of DNS record configuration -->
+<!-- TODO: Add a verified panel and DNS-provider example using nonproduction values. -->
 
-> [!NOTE]
-> **Cloudflare users:** Set the proxy status to "DNS only" (grey cloud). The orange cloud proxy breaks Minecraft connections.
+## Verify
 
-### Step 3: Create an SRV Record (If Needed)
-
-Only required if your server uses a non-standard port (not 25565):
-
-| Field | Value |
-|-------|-------|
-| Type | SRV |
-| Name | `_minecraft._tcp.play` |
-| Priority | 0 |
-| Weight | 0 |
-| Port | Your server's port |
-| Target | `play.yourdomain.com` |
-
-Adjust the name to match your subdomain (e.g., `_minecraft._tcp` for root domain).
-
-## DNS Propagation
-
-DNS changes can take up to 24 hours to propagate globally, though most updates complete within a few hours.
-
-You can check propagation status at [dnschecker.org](https://dnschecker.org/).
-
-## Bedrock Edition Note
-
-> [!WARNING]
-> Bedrock Edition does not support SRV records. Bedrock players must enter the server IP and port separately when connecting, even if you have a custom domain.
-
-## Using Root Domain
-
-To use `yourdomain.com` (without a subdomain):
-
-1. Set the A record Name to `@`
-2. Set the SRV record Name to `_minecraft._tcp`
-
-## Troubleshooting
-
-### Domain not connecting
-
-- Wait for DNS propagation (up to 24 hours)
-- Verify the A record points to the correct IP
-- Check that SRV record exists (for non-25565 ports)
-- Disable Cloudflare proxy if enabled
-
-### Connection refused
-
-- Confirm your server is running
-- Verify the port in your SRV record matches your server
-
-### Works for some players, not others
-
-- DNS propagation is still in progress
-- Ask affected players to try flushing their DNS cache
+1. Confirm the host name resolves to the address shown in the server panel.
+2. Confirm the SRV record uses the displayed port when one is required.
+3. Wait for the DNS record's configured TTL before treating an old answer as a
+   configuration failure.
 
 ## See Also
 
-- [Bedrock Crossplay](/game-servers/minecraft/bedrock-crossplay)
-- [Getting Started](/game-servers/minecraft/getting-started)
+- [Server Properties](/game-servers/minecraft/server-properties)
+- [Commands and Permissions](/game-servers/minecraft/commands)

@@ -8,9 +8,9 @@ author: Brian Neumann-Fopiano
 
 # Creating Your Account
 
-Setting up your QualityNode account is quick and easy.
+Create the account from the QualityNode website.
 
-## Registration Steps
+## Registration steps
 
 1. Visit [qualitynode.net](https://qualitynode.com)
 2. Click **Sign Up** in the navigation
@@ -19,18 +19,18 @@ Setting up your QualityNode account is quick and easy.
 5. Verify your email address
 6. Complete your profile
 
-## Account Security
+## Account security
 
 > [!TIP]
-> We recommend enabling two-factor authentication (2FA) for enhanced security.
+> Enable two-factor authentication (2FA) after registration.
 
-Your account security is important:
+Protect the account:
 
 - Use a strong, unique password
 - Enable 2FA in your account settings
 - Never share your login credentials
 - Keep your contact email up to date
 
-## Next Steps
+## Next steps
 
-Once your account is created, you're ready to [choose a hosting plan](/getting-started/choosing-a-plan).
+After registration, [choose a hosting plan](/getting-started/choosing-a-plan).

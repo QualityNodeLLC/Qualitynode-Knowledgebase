@@ -1,6 +1,7 @@
 ---
 title: Garry's Mod Server Hosting
 description: Guides for setting up and managing your Garry's Mod dedicated server on QualityNode.
+draft: true
 order: 2
 author: QualityNode
 tags:

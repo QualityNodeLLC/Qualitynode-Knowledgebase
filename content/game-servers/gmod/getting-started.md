@@ -1,6 +1,7 @@
 ---
 title: Getting Started with Your Garry's Mod Server
 description: Essential first steps for setting up your new Garry's Mod server on QualityNode.
+draft: true
 order: 1
 author: QualityNode
 tags:

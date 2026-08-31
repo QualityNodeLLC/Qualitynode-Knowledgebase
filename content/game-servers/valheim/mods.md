@@ -4,6 +4,7 @@ description: Add mods to your Valheim server using BepInEx and Thunderstore.
 icon: puzzle
 order: 3
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # Installing Mods

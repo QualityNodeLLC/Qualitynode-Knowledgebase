@@ -8,17 +8,17 @@ author: Brian Neumann-Fopiano
 
 # Getting Started with QualityNode
 
-Welcome to QualityNode! This guide will walk you through setting up your first game server.
+Create an account, choose a plan, then configure the server from the control panel.
 
-## Quick Start
+## Set up a server
 
-1. **Create an Account** - Sign up at [qualitynode.net](https://qualitynode.com)
-2. **Choose a Plan** - Select the plan that fits your needs
-3. **Select Your Game** - Pick from our supported games catalog
-4. **Configure Your Server** - Customize settings and install mods
-5. **Start Playing** - Share your server IP with friends and start gaming
+1. Create an account at [qualitynode.com](https://qualitynode.com).
+2. Choose a plan for the expected player count and workload.
+3. Select a game from the supported catalog.
+4. Configure the server from the control panel.
+5. Share the server address with your players.
 
-## What's Next?
+## Next guides
 
 - [Creating Your Account](/getting-started/account-creation)
 - [Choosing the Right Plan](/getting-started/choosing-a-plan)

@@ -12,7 +12,7 @@ The `server.properties` file contains essential configuration settings for your 
 > [!IMPORTANT]
 > Restart your server after making changes. World generation modifications may require deleting existing world folders.
 
-## World Settings
+## World settings
 
 ### level-seed
 
@@ -42,7 +42,7 @@ Options:
 - `minecraft:large_biomes` - Larger biome sizes
 - `minecraft:amplified` - Extreme terrain heights
 
-## Gameplay Settings
+## Gameplay settings
 
 ### gamemode
 
@@ -70,7 +70,7 @@ hardcore=false
 
 Locks difficulty to Hard. Deceased players enter Spectator Mode.
 
-## Player & Access Settings
+## Player and access settings
 
 ### max-players
 
@@ -97,7 +97,7 @@ white-list=true
 
 Enabled by default. Prevents unwanted players from joining.
 
-## Protection & Building
+## Protection and building
 
 ### spawn-protection
 
@@ -107,7 +107,7 @@ spawn-protection=16
 
 Radius in blocks around spawn protected from non-operator modifications. Set to `0` to disable.
 
-## Performance Settings
+## Performance settings
 
 ### view-distance
 
@@ -128,7 +128,7 @@ Radius around players where entities are actively simulated. Lower values reduce
 > [!TIP]
 > For laggy servers, try `view-distance=8` and `simulation-distance=4` as a starting point.
 
-## Server Messaging
+## Server messaging
 
 ### motd
 
@@ -140,7 +140,7 @@ Message shown in the server list. Use `\n` for line breaks.
 
 Tools like [mctools.org's MOTD Creator](https://mctools.org/motd-creator) help with formatting and colors.
 
-## Resource Packs
+## Resource packs
 
 ### resource-pack
 
@@ -148,7 +148,8 @@ Tools like [mctools.org's MOTD Creator](https://mctools.org/motd-creator) help w
 resource-pack=https://download.mc-packs.net/pack/example.zip
 ```
 
-URL to automatically download when players join. See [Adding Resource Packs](/game-servers/minecraft/resource-packs).
+URL to automatically download when players join. Use a URL that is directly
+reachable by players and matches the resource-pack hash you configured.
 
 ### resource-pack-sha1
 
@@ -166,7 +167,7 @@ require-resource-pack=false
 
 Set to `true` to require acceptance before joining.
 
-## Security Settings
+## Security settings
 
 ### enforce-secure-profile
 
@@ -184,7 +185,7 @@ allow-flight=true
 
 Enabled by default on QualityNode. Prevents false "flying" kicks when players use minecarts or boats.
 
-## Settings Moved to Game Rules
+## Settings moved to game rules
 
 As of Minecraft 1.21.9, these settings are now controlled via `/gamerule`:
 
@@ -194,7 +195,7 @@ As of Minecraft 1.21.9, these settings are now controlled via `/gamerule`:
 | `enable-command-block` | `commandBlocksEnabled` |
 | `allow-nether` | `allowEnteringNetherUsingPortals` |
 
-## Quick Reference
+## Quick reference
 
 | Setting | Recommended Value | Purpose |
 |---------|------------------|---------|

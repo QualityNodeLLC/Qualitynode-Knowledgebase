@@ -1,6 +1,7 @@
 ---
 title: "Getting Started with Your ARK Server"
 description: "Essential first steps for setting up your new ARK: Survival Evolved server on QualityNode."
+draft: true
 order: 1
 author: QualityNode
 tags:

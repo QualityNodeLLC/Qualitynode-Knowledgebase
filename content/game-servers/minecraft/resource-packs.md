@@ -3,6 +3,7 @@ title: Adding Resource Packs
 description: How to set up a server resource pack that automatically downloads for players.
 order: 10
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # Adding Resource Packs

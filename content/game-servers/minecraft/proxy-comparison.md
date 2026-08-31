@@ -7,13 +7,13 @@ author: Brian Neumann-Fopiano
 
 # Proxy Software Comparison
 
-Proxy servers enable linking multiple Minecraft servers under a single IP address. This guide compares available options.
+Proxy servers link multiple Minecraft servers under one IP address. This page compares the available options.
 
-## Quick Recommendation
+## Recommendation
 
-> **Use Velocity.** It's the only proxy software recommended for new networks in 2025.
+> Use Velocity for a new proxy network.
 
-## Velocity (Recommended)
+## Velocity (recommended)
 
 Velocity is a modern, high-performance proxy designed for reliability and speed.
 
@@ -26,7 +26,7 @@ Velocity is a modern, high-performance proxy designed for reliability and speed.
 - **Geyser support:** Built-in Bedrock Edition crossplay capability
 - **Easy configuration:** Straightforward setup process
 
-### Plugin Availability
+### Plugin availability
 
 Find Velocity plugins on:
 - [Modrinth](https://modrinth.com/plugins?g=categories:velocity)
@@ -34,33 +34,22 @@ Find Velocity plugins on:
 
 Most popular proxy plugins support Velocity.
 
-## BungeeCord / Waterfall (Not Recommended)
+## BungeeCord / Waterfall (not recommended)
 
 BungeeCord was the original Minecraft proxy. Waterfall was its maintained fork.
 
-### Why Avoid Them
+### Reasons to avoid them
 
 - **No longer actively developed:** Waterfall has reached end-of-life
 - **Security concerns:** Uses insecure player data transmission by default
 - **Inferior performance:** Cannot match Velocity's efficiency
 - **Outdated architecture:** Designed for an older era of Minecraft networking
 
-### Legacy Use Cases
+### Legacy use cases
 
-If you absolutely must use legacy proxy software for compatibility:
+If compatibility requires legacy proxy software:
 - Waterfall is more stable than original BungeeCord
 - Consider migrating to Velocity instead
-
-## Large Network Example
-
-Major networks like Hypixel demonstrate enterprise-scale proxy deployment:
-
-- Multiple load-balanced Velocity proxies
-- DDoS protection via Cloudflare
-- Thousands of individual game mode servers
-- Separate lobbies for different games
-
-While most servers won't need this scale, Velocity can grow with your network.
 
 ## Migration from BungeeCord
 
@@ -74,7 +63,6 @@ If you're currently using BungeeCord or Waterfall:
 
 Most plugins have Velocity versions or alternatives available.
 
-## See Also
+## See also
 
 - [Velocity Proxy Setup](/game-servers/minecraft/velocity-proxy)
-- [Bedrock Crossplay](/game-servers/minecraft/bedrock-crossplay)

@@ -1,6 +1,7 @@
 ---
 title: Getting Started with Your Project Zomboid Server
 description: Essential first steps for setting up your new Project Zomboid server on QualityNode.
+draft: true
 order: 1
 author: QualityNode
 tags:

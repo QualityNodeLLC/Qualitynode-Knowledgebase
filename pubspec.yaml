@@ -24,6 +24,7 @@ dev_dependencies:
   build_web_compilers: ^4.4.14
   jaspr_builder: ^0.23.1
   lints: ^6.1.0
+  test: ^1.26.3
 
 dependency_overrides:
   arcane_jaspr:
@@ -44,11 +45,11 @@ scripts:
   serve: jaspr serve
 
   # Build (validates content first, then builds)
-  build: dart run tool/validate_content.dart --fix && jaspr build
-  build_strict: dart run tool/validate_content.dart --strict && jaspr build
+  build: dart run tool/generate_search_index.dart && dart run tool/validate_content.dart --strict && jaspr build
+  build_strict: dart run tool/generate_search_index.dart && dart run tool/validate_content.dart --strict && jaspr build
 
   # Deployment
-  deploy: dart run tool/validate_content.dart --fix && jaspr build && firebase deploy --only hosting --project qualitynode-1b4a8
+  deploy: dart run tool/generate_search_index.dart && dart run tool/validate_content.dart --strict && jaspr build && firebase deploy --only hosting --project qualitynode-1b4a8
 
   # Cleanup
   clean: jaspr clean

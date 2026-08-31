@@ -14,6 +14,7 @@
 /// - "remote" mode deletes the overrides file
 ///
 /// Configuration is defined in scripts/dependencies.yaml
+library;
 
 import 'dart:io';
 

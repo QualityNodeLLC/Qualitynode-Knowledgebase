@@ -9,22 +9,22 @@ author: Brian Neumann-Fopiano
 
 No anticheat is perfect, but choosing the right one significantly reduces cheating on your server.
 
-## Important Principles
+## Important principles
 
-### Never Auto-Ban
+### Never auto-ban
 
 > [!CAUTION]
 > Configure anticheats to flag and notify, not automatically ban. False positives happen due to lag, high ping, client mods, or anticheat errors.
 
 Staff should manually review flagged players before taking action.
 
-### Single Anticheat Only
+### Use one anticheat
 
 Run only one anticheat at a time. Multiple anticheats conflict with each other and cause more problems than they solve.
 
-## Recommended Options
+## Recommended options
 
-### Vulcan (Paid)
+### Vulcan (paid)
 
 **Price:** One-time purchase on [SpigotMC](https://spigotmc.org/resources/vulcan-anti-cheat-advanced-cheat-detection.83626/)
 
@@ -38,7 +38,7 @@ The most reliable anticheat currently available with very low false positive rat
 
 **Best for:** Servers prioritizing accuracy over cost.
 
-### Grim (Free)
+### Grim (free)
 
 **Download:** [SpigotMC](https://spigotmc.org/resources/grim-anticheat.99923/) or [GitHub](https://github.com/GrimAnticheat/Grim)
 
@@ -52,7 +52,7 @@ A highly effective free option using 1:1 player movement simulation.
 
 **Best for:** Servers wanting strong protection without cost.
 
-## Paper Anti-Xray
+## Paper anti-xray
 
 For survival servers, enable Paper's built-in Anti-Xray before adding other anticheats.
 
@@ -67,11 +67,11 @@ anticheat:
 
 Engine mode 2 sends fake ores to clients, making x-ray ineffective.
 
-## When Investigating Cheaters
+## When investigating cheaters
 
 Use these tools to verify before taking action:
 
-### Check Server Health
+### Check server health
 
 ```
 spark tps
@@ -79,17 +79,17 @@ spark tps
 
 Low TPS can cause false positives from lag.
 
-### Check Player Ping
+### Check player ping
 
 High latency causes rubber-banding that anticheats may misinterpret.
 
-### Review Context
+### Review context
 
 - Are they using known client mods?
 - Is the behavior consistent or occasional?
 - Could lag explain the flags?
 
-## Anticheat Configuration Tips
+## Anticheat configuration tips
 
 ### Vulcan
 
@@ -103,7 +103,7 @@ High latency causes rubber-banding that anticheats may misinterpret.
 - Review predictions settings for your server's typical TPS
 - Set up Discord alerts for high-violation players
 
-## What Anticheats Detect
+## What anticheats detect
 
 | Cheat Type | Detection |
 |------------|-----------|
@@ -121,7 +121,6 @@ Anticheats cannot reliably detect:
 - Client-side information mods
 - Very subtle modifications
 
-## See Also
+## See also
 
-- [Uploading Mods and Plugins](/game-servers/minecraft/mods-plugins)
 - [Diagnosing Server Lag](/game-servers/minecraft/diagnosing-lag)

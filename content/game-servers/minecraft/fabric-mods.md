@@ -3,6 +3,7 @@ title: Pre-installed Fabric Mods
 description: Overview of the optimization mods automatically installed on QualityNode Fabric servers.
 order: 8
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # Pre-installed Fabric Mods

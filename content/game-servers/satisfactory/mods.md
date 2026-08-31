@@ -4,6 +4,7 @@ description: Add mods to your Satisfactory server using Satisfactory Mod Manager
 icon: puzzle
 order: 3
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # Installing Mods

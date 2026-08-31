@@ -3,6 +3,7 @@ title: Live Server Maps
 description: Add a web-based map viewer for your Minecraft world.
 order: 23
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # Live Server Maps

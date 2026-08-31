@@ -1,6 +1,7 @@
 ---
 title: Getting Started with Your CS2 Server
 description: Essential first steps for setting up your new Counter-Strike 2 server on QualityNode.
+draft: true
 order: 1
 author: QualityNode
 tags:

@@ -28,14 +28,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: ArcaneArts/arcane_jaspr
-          ref: 1d139808269cd41f11cc0a61ef3b14c575921799
+          ref: edd4d7f45dcefe647f0792902acc1808cb47477b
           path: .deps/arcane_jaspr
 
       - name: Checkout pinned arcane_lexicon
         uses: actions/checkout@v4
         with:
           repository: ArcaneArts/arcane_lexicon
-          ref: c9d5f077238aeffdc882a923034badd5e2663259
+          ref: 2c243c21aeac2903118084952217bc1f4f675c49
           path: .deps/arcane_lexicon
 
       - name: Setup Dart
@@ -90,14 +90,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: ArcaneArts/arcane_jaspr
-          ref: 1d139808269cd41f11cc0a61ef3b14c575921799
+          ref: edd4d7f45dcefe647f0792902acc1808cb47477b
           path: .deps/arcane_jaspr
 
       - name: Checkout pinned arcane_lexicon
         uses: actions/checkout@v4
         with:
           repository: ArcaneArts/arcane_lexicon
-          ref: c9d5f077238aeffdc882a923034badd5e2663259
+          ref: 2c243c21aeac2903118084952217bc1f4f675c49
           path: .deps/arcane_lexicon
 
       - name: Pull latest changes
@@ -124,21 +124,61 @@ jobs:
       - name: Get dependencies
         run: flutter pub get
 
+      - name: Run source and content policy tests
+        run: dart test
+
       - name: Generate search index
         run: dart run tool/generate_search_index.dart
 
-      - name: Build Jaspr app
-        run: jaspr build
+      - name: Validate published content
+        run: dart run tool/validate_content.dart --strict
 
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
           # Node 22.23.0 has a keep-alive socket regression that breaks
-          # firebase-tools' OAuth token fetch ("Premature close", surfaced as a
-          # bogus "Failed to authenticate"). 22.23.1 is the patched release. This
-          # deploy job previously had no Node setup, so it used the runner's
-          # broken default; a bare "22" would still resolve to the cached 22.23.0.
+          # firebase-tools' OAuth token fetch. Keep the patched release exact.
           node-version: 22.23.1
+
+      - name: Install browser policy dependencies
+        working-directory: test/browser
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Build Jaspr app
+        run: jaspr build
+
+      - name: Check Knowledgebase browser design policy
+        run: |
+          set -euo pipefail
+
+          browser_log="$RUNNER_TEMP/knowledgebase-browser-policy-server.log"
+          npm --prefix test/browser run serve-build -- --listen 8899 >"$browser_log" 2>&1 &
+          browser_server_pid=$!
+
+          cleanup() {
+            kill "$browser_server_pid" 2>/dev/null || true
+            wait "$browser_server_pid" 2>/dev/null || true
+          }
+          trap cleanup EXIT
+
+          for attempt in {1..60}; do
+            if curl --fail --silent --show-error http://127.0.0.1:8899/ >/dev/null; then
+              break
+            fi
+            if ! kill -0 "$browser_server_pid" 2>/dev/null; then
+              cat "$browser_log"
+              exit 1
+            fi
+            if [[ "$attempt" == "60" ]]; then
+              cat "$browser_log"
+              exit 1
+            fi
+            sleep 1
+          done
+
+          BASE_URL=http://127.0.0.1:8899 npm --prefix test/browser run design-policy
 
       - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v3

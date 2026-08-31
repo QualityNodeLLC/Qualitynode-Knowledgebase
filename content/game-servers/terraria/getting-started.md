@@ -1,6 +1,7 @@
 ---
 title: Getting Started with Your Terraria Server
 description: Essential first steps for setting up your new Terraria server on QualityNode.
+draft: true
 order: 1
 author: QualityNode
 tags:

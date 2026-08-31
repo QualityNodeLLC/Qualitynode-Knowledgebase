@@ -3,6 +3,7 @@ title: Upload a Custom World
 description: How to upload and use your own world files on your Minecraft server.
 order: 11
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # Upload a Custom World

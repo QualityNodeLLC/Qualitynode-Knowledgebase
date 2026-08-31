@@ -1,148 +1,57 @@
 ---
 title: MySQL Databases
-description: Set up shared databases for cross-server data synchronization.
+description: Configure a plugin with database credentials displayed by the server panel.
 order: 24
 author: Brian Neumann-Fopiano
 ---
 
 # MySQL Databases
 
-Databases enable plugins to store and share player data across multiple servers, essential for networks with shared inventories, permissions, or economy.
+The current plan configuration includes MySQL Database on Performance and
+Unlimited MySQL on Enterprise. Confirm the feature in the billing portal and
+server panel for your subscription.
 
-## Common Use Cases
+## Create a database
 
-- **LuckPerms** - Synchronized permissions across servers
-- **CoreProtect** - Centralized block logging
-- **CMI/EssentialsX** - Shared economy and player data
-- **Custom plugins** - Any plugin supporting MySQL storage
+When the server panel shows a **Databases** section:
 
-## Creating a Database
+1. Open that section for the server that will use the database.
+2. Create a database with a purpose-specific name.
+3. Reveal the connection values generated for that database.
+4. Store the password in the plugin configuration or secret mechanism required
+   by that plugin.
 
-### Step 1: Access Database Settings
+## Configure a plugin
 
-1. Go to your control panel and select your server
-2. Click **Databases** in the sidebar
-3. Click **Create Database**
+Copy every connection value from the database entry shown in the panel:
 
-### Step 2: Name Your Database
+| Plugin setting | Source |
+|----------------|--------|
+| Host or address | Database entry in the panel |
+| Port | Database entry in the panel |
+| Database name | Database entry in the panel |
+| Username | Database entry in the panel |
+| Password | Database entry in the panel |
 
-Choose a descriptive name reflecting its purpose:
-- `luckperms`
-- `coreprotect`
-- `economy`
-
-Leave the "Connections From" field blank and confirm creation.
-
-### Step 3: View Credentials
-
-Click the eye icon next to your database to reveal connection details:
-
-- **Host/Address**
-- **Port**
-- **Database Name**
-- **Username**
-- **Password**
-
-## Configuring Plugins
-
-### Connection Details
-
-When configuring plugins, use these settings:
-
-| Setting | Value |
-|---------|-------|
-| **Address** | `172.18.0.1` |
-| **Port** | `3306` (usually default) |
-| **Database** | Your database name (e.g., `s123_luckperms`) |
-| **Username** | As shown in panel |
-| **Password** | As shown in panel |
-
-> [!NOTE]
-> Use the internal IP `172.18.0.1` for direct server connections within QualityNode's network. This provides faster, more reliable connectivity.
-
-### Storage Type
-
-When prompted for storage type, select:
-- **MariaDB** (preferred - it's what QualityNode runs)
-- **MySQL** (compatible alternative)
-- **SQL** (if only option available)
-
-### Quick Configuration
-
-The panel offers quick-copy buttons for common plugins like LuckPerms and CoreProtect. These pre-fill the configuration with your database credentials.
-
-## Example: LuckPerms Configuration
-
-In `plugins/LuckPerms/config.yml`:
-
-```yaml
-storage-method: MariaDB
-
-data:
-  address: 172.18.0.1:3306
-  database: s123_luckperms
-  username: u123_abc
-  password: your_password_here
-  pool-settings:
-    maximum-pool-size: 10
-```
-
-## Example: CoreProtect Configuration
-
-In `plugins/CoreProtect/config.yml`:
-
-```yaml
-use-mysql: true
-mysql-host: 172.18.0.1
-mysql-port: 3306
-mysql-database: s123_coreprotect
-mysql-username: u123_abc
-mysql-password: your_password_here
-```
-
-## Managing Databases Externally
-
-Access your database from your computer using database management tools:
-
-### Recommended Software
-
-- [HeidiSQL](https://heidisql.com/) (Windows)
-- [MySQL Workbench](https://mysql.com/products/workbench/) (Cross-platform)
-- [DBeaver](https://dbeaver.io/) (Cross-platform)
-
-### External Connection
-
-When connecting from outside QualityNode's network, use the external address shown in your panel (not `172.18.0.1`).
-
-## Multiple Servers, One Database
-
-For networks with shared data:
-
-1. Create one database for each plugin that needs sharing
-2. Configure all servers to use the same database credentials
-3. Ensure plugins support multi-server mode (most do)
+Do not substitute a fixed private address, a value from another server, or an
+example credential. Plugin field names and supported database drivers are
+defined by the plugin's own documentation.
 
 ## Troubleshooting
 
-### Connection refused
+- Recopy the host, port, database name, and username from the same database
+  entry.
+- Reset the database password in the panel and update the plugin configuration
+  when credentials may have been exposed.
+- Confirm the plugin supports the database type offered by the panel.
+- Review the plugin log for the exact connection error before changing network
+  or pool settings.
 
-- Verify the address is `172.18.0.1` for internal connections
-- Check credentials are copied exactly
-- Ensure the database exists
+If the database section or required action is unavailable, email
+support@qualitynode.net with the server identifier. Do not send the database
+password.
 
-### Access denied
-
-- Double-check username and password
-- Verify the database name matches exactly
-- Recreate the database if issues persist
-
-### Slow performance
-
-- Use MariaDB driver if available
-- Check pool settings in plugin configuration
-- Monitor database size for bloat
-
-## See Also
+## See also
 
 - [Velocity Proxy Setup](/game-servers/minecraft/velocity-proxy)
-- [Uploading Mods and Plugins](/game-servers/minecraft/mods-plugins)
+- [Minecraft Guides](/game-servers/minecraft)

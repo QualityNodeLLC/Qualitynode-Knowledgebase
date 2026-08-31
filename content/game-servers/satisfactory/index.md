@@ -3,6 +3,7 @@ title: Satisfactory Server Hosting
 description: Complete guides for setting up and managing your Satisfactory dedicated server on QualityNode.
 order: 1
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # Satisfactory Server Hosting

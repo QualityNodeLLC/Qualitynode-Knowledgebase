@@ -3,6 +3,7 @@ title: Uploading Mods and Plugins
 description: How to add custom mods and plugins to your Minecraft server.
 order: 7
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # Uploading Mods and Plugins

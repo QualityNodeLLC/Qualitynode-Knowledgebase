@@ -1,6 +1,7 @@
 ---
 title: Getting Started with Your Enshrouded Server
 description: Essential first steps for setting up your new Enshrouded server on QualityNode.
+draft: true
 order: 1
 author: QualityNode
 tags:

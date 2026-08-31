@@ -1,6 +1,6 @@
 ---
 title: Managing Subscriptions
-description: View, modify, and cancel your server subscriptions.
+description: View the current state and available actions for your subscriptions.
 icon: repeat
 order: 3
 author: Brian Neumann-Fopiano
@@ -8,57 +8,17 @@ author: Brian Neumann-Fopiano
 
 # Managing Subscriptions
 
-Control your QualityNode subscriptions from your account dashboard.
+Open the billing portal to view each subscription's current plan, price, billing
+state, and available actions. The portal is authoritative when this article and
+the account display differ.
 
-## Viewing Your Subscriptions
+## Change subscription state
 
-1. Go to **Account Settings**
-2. Click **Subscriptions**
-3. View all active and past subscriptions
+1. Open the subscription in the billing portal.
+2. Review the actions currently available for that subscription.
+3. Read the effective date and charge summary displayed before confirmation.
+4. Confirm only after the summary matches your intent.
 
-## Subscription Details
-
-Each subscription shows:
-- Server name and game
-- Plan tier (Threshold, Agent, Director, Astral)
-- Billing cycle (Monthly/Annual)
-- Next billing date
-- Price
-
-## Billing Cycles
-
-### Monthly Billing
-- Charged on the same date each month
-- Full flexibility to cancel anytime
-- No long-term commitment
-
-### Annual Billing
-- Save up to 17% compared to monthly
-- Charged once per year
-- Price lock guarantee
-- Two months free
-
-## Cancelling a Subscription
-
-1. Go to **Subscriptions**
-2. Find the subscription to cancel
-3. Click **Cancel Subscription**
-4. Confirm cancellation
-
-> [!IMPORTANT]
-> Cancelled subscriptions remain active until the end of the current billing period. Your server and data will be preserved until then.
-
-## Reactivating a Subscription
-
-If you cancelled but changed your mind:
-
-1. Go to **Subscriptions**
-2. Find the cancelled subscription
-3. Click **Reactivate**
-4. Confirm reactivation
-
-## Auto-Renewal
-
-Subscriptions automatically renew unless cancelled. You'll receive email reminders before renewal:
-- 7 days before renewal
-- 1 day before renewal
+If an expected action is unavailable, open a billing ticket or email
+support@qualitynode.net. Support must confirm account-specific renewal,
+cancellation, or reactivation behavior.

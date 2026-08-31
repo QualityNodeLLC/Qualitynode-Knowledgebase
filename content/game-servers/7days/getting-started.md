@@ -1,6 +1,7 @@
 ---
 title: Getting Started with Your 7 Days to Die Server
 description: Essential first steps for setting up your new 7 Days to Die server on QualityNode.
+draft: true
 order: 1
 author: QualityNode
 tags:

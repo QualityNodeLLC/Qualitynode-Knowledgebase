@@ -8,9 +8,9 @@ author: Brian Neumann-Fopiano
 
 # Dashboard Overview
 
-The QualityNode dashboard is your central hub for managing all your game servers.
+The QualityNode dashboard lists your game servers and opens the management panel for each server.
 
-## Main Dashboard
+## Main dashboard
 
 When you log in, you'll see:
 
@@ -19,7 +19,7 @@ When you log in, you'll see:
 - **Quick Actions** - Start, stop, restart servers
 - **Recent Activity** - Latest server events and logs
 
-## Server Management Panel
+## Server management panel
 
 Click on any server to access its management panel:
 
@@ -42,7 +42,7 @@ Server configuration options including:
 ### Players
 View connected players, manage bans and whitelists, and moderate your community.
 
-## Account Settings
+## Account settings
 
 Access your account settings to:
 
@@ -50,6 +50,3 @@ Access your account settings to:
 - Manage billing and subscriptions
 - Configure two-factor authentication
 - View invoices and payment history
-
-> [!NOTE]
-> Need help navigating? Our support team is available via Discord or email.

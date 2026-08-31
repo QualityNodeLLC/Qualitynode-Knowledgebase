@@ -7,9 +7,9 @@ author: Brian Neumann-Fopiano
 
 # Minecraft Server Commands Reference
 
-This guide covers commonly used commands for managing your Minecraft server.
+Use these commands to manage players, world settings, saves, and server state.
 
-## Command Syntax
+## Command syntax
 
 - Arguments in `<brackets>` are **required**
 - Arguments in `[brackets]` are **optional**
@@ -18,9 +18,9 @@ This guide covers commonly used commands for managing your Minecraft server.
 
 To see all available commands, use `/help` in-game.
 
-## Player Management
+## Player management
 
-### Operator Permissions
+### Operator permissions
 
 ```
 op <player>
@@ -61,7 +61,7 @@ pardon-ip <ip>
 
 Block players or IP addresses from joining.
 
-### Current Players
+### Current players
 
 ```
 list
@@ -69,9 +69,9 @@ list
 
 Shows all currently connected players.
 
-## Gameplay Commands
+## Gameplay commands
 
-### Game Mode
+### Game mode
 
 ```
 gamemode <survival|creative|adventure|spectator> [player]
@@ -105,9 +105,9 @@ kill <target>
 
 Eliminates entities (players, mobs, etc.).
 
-## World Settings
+## World settings
 
-### Spawn Point
+### Spawn point
 
 ```
 setworldspawn <x> <y> <z>
@@ -149,7 +149,7 @@ seed
 
 Displays the world seed.
 
-## Game Rules
+## Game rules
 
 Game rules adjust server mechanics. View all with `/gamerule` and set with:
 
@@ -157,7 +157,7 @@ Game rules adjust server mechanics. View all with `/gamerule` and set with:
 gamerule <rule> <value>
 ```
 
-### Useful Game Rules
+### Useful game rules
 
 | Rule | Default | Description |
 |------|---------|-------------|
@@ -183,7 +183,7 @@ gamerule playersSleepingPercentage 1
 > [!NOTE]
 > As of Minecraft 1.21.9, some settings previously in `server.properties` (like `pvp`, `enable-command-block`, and `allow-nether`) have been moved to game rules.
 
-## Save Commands
+## Save commands
 
 ```
 save-all
@@ -193,7 +193,7 @@ save-off
 
 Force save, or enable/disable automatic saving.
 
-## Server Control
+## Server control
 
 ```
 stop

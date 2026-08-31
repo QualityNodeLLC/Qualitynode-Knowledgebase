@@ -3,6 +3,7 @@ title: Automatic Backups
 description: Schedule regular automated backups to protect your server data.
 order: 16
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # Automatic Backups
@@ -103,7 +104,7 @@ Create manual backups before:
 
 ## Backup Storage
 
-Backups are stored off-site for redundancy. Access them through the **Backups** section of your panel.
+Access available backups through the **Backups** section of the panel.
 
 View backup details:
 - Creation timestamp

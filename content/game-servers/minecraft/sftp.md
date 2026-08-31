@@ -3,6 +3,7 @@ title: SFTP File Access
 description: Manage your server files from your computer using SFTP.
 order: 20
 author: Brian Neumann-Fopiano
+draft: true
 ---
 
 # SFTP File Access
